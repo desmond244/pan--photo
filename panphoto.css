@@ -1,0 +1,671 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px 24px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 3;
+}
+
+.logo {
+  font-family: inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: green;
+}
+
+li {
+  font-family: inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button {
+  padding: 16px;
+  border-radius: 8px;
+  border: 2px solid black;
+  background: #fff;
+}
+
+button:hover {
+  color: green;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.67) 0%,
+      #fff 100%
+    ),
+    url(./images/Rectangle\ 4.png);
+  text-align: center;
+  width: 100%;
+  height: 531px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 190px;
+}
+.hero-1 {
+  font-family: inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 2px;
+}
+.hero-2 {
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 2px;
+}
+
+.hero-3 {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 2px;
+}
+
+input[type="text"] {
+  display: flex;
+  width: 312px;
+  height: 56px;
+  padding: 16px;
+  border: 1px solid #828282;
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+input[type="text"]::placeholder {
+  background: url(./images/search\ 2.svg);
+  color: #1e1e1e;
+  background-repeat: no-repeat;
+  padding-left: 24px;
+  background-size: 18px;
+  font-weight: 400;
+}
+
+.container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2750px;
+  width: 100%;
+  gap: 24px;
+  padding: 8px 24px;
+
+  /* padding-bottom: 159px; */
+  border: 1px solid #f8f6f6;
+}
+
+.frame-1 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 100%;
+  gap: 24px;
+}
+
+.box {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  opacity: 0;
+  align-items: flex-end;
+  transition: opacity 0.25s;
+  transition: transform 0.25s;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+}
+
+.box:hover {
+  opacity: 1;
+  transition: 3ms;
+}
+
+.box > * {
+  /* transform: translateY(0); */
+  transition: transform 0.5s;
+  transform: translateY(-10px);
+}
+
+.smallimage {
+  border-radius: 50%;
+  /* border: 2px solid green; */
+  height: 56px;
+  width: 56px;
+}
+
+.row-text {
+  margin: 0;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  gap: 10px;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  /* align-items: center; */
+  gap: 10px;
+}
+
+.icon {
+  align-items: center;
+  background-color: white;
+  color: #f8f6f6;
+  gap: 2px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 6px;
+  height: 30px;
+  width: 30px;
+}
+
+.photo-1 {
+  display: flex;
+  width: 310px;
+  height: 190px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -1.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-2 {
+  display: flex;
+  width: 310px;
+  height: 528px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -2.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-3 {
+  display: flex;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -3.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-4 {
+  display: flex;
+  width: 310px;
+  height: 528px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -4.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-5 {
+  display: flex;
+  width: 310px;
+  height: 528px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -5.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-6 {
+  display: flex;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -6.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-7 {
+  display: flex;
+  width: 310px;
+  height: 198px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -7.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.frame-2 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 100%;
+  gap: 20px;
+}
+
+.photo-8 {
+  display: flex;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -8.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-9 {
+  display: flex;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -9.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-10 {
+  display: flex;
+  width: 310px;
+  height: 528px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -10.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-11 {
+  display: flex;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -11.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-12 {
+  display: flex;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -12.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-13 {
+  display: flex;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card-13.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-14 {
+  display: flex;
+  width: 310px;
+  height: 528px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -14.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.frame-3 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 100%;
+  gap: 24px;
+}
+
+.photo-15 {
+  display: flex;
+  width: 310px;
+  height: 528px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -15.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-16 {
+  display: flex;
+  width: 310px;
+  height: 198px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -16.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-17 {
+  display: flex;
+  width: 310px;
+  height: 528px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -17.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-18 {
+  display: flex;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -18.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-19 {
+  display: flex;
+  width: 310px;
+  height: 528px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -19.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-20 {
+  display: flex;
+  width: 310px;
+  height: 198px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -20.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-21 {
+  display: flex;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -21.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.frame-4 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 100%;
+  gap: 24px;
+}
+
+.photo-22 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 198px;
+  background-image: url(./images/Photo\ Card\ -22.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-23 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 528px;
+  background-image: url(./images/Photo\ Card\ -23.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-24 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 310px;
+  background-image: url(./images/Photo\ Card\ -24.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-25 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 528px;
+  background-image: url(./images/Photo\ Card\ -25.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-26 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 198px;
+  background-image: url(./images/Photo\ Card\ -26.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-27 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 310px;
+  background-image: url(./images/Photo\ Card\ -27.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.photo-28 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 528px;
+  background-image: url(./images/Photo\ Card\ -28.svg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.frame-5 {
+  display: flex;
+  flex-direction: column;
+  width: 5457px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.mobile-17 {
+  display: flex;
+  width: 310px;
+  height: 198px;
+  background-image: url(./images/Photo\ Card\ -17.svg);
+}
+
+.mobile-18 {
+  display: flex;
+  width: 310px;
+  height: 528px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -18.svg);
+}
+
+.mobile-19 {
+  display: flex;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -19.svg);
+}
+
+.mobile-20 {
+  display: flex;
+  width: 310px;
+  height: 528px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -20.svg);
+}
+
+.mobile-21 {
+  display: flex;
+  width: 310px;
+  height: 528px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -21.svg);
+}
+
+.mobile-22 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -22.svg);
+}
+
+.mobile-23 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 198px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -23.svg);
+}
+
+.mobile-24 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -24.svg);
+}
+
+.mobile-25 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -25.svg);
+}
+
+.mobile-26 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 528px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -26.svg);
+}
+
+.mobile-27 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -27.svg);
+}
+
+.mobile-28 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -28.svg);
+}
+
+.mobile-29 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -29.svg);
+}
+
+.mobile-30 {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 528px;
+  background-repeat: no-repeat;
+  background-image: url(./images/Photo\ Card\ -30.svg);
+}
+
+@media screen and (min-width: 499px) {
+  .frame-5 {
+    display: none;
+  }
+  nav {
+    padding: 16px 64px;
+  }
+  .ham {
+    display: none;
+  }
+
+  section {
+    height: 673px;
+  }
+  .hero-1 {
+    font-size: 32px;
+  }
+
+  .hero-2 {
+    font-size: 18px;
+  }
+  .hero-3 {
+    font-size: 18px;
+  }
+
+  input[type="text"] {
+    width: 644px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .nav-list {
+    display: none;
+  }
+
+  body {
+    width: 360px;
+    height: 6271px;
+  }
+
+  .container {
+    width: 360px;
+    height: 5600px;
+    padding-bottom: 135px;
+  }
+
+  .frame-1 {
+    display: none;
+  }
+  .frame-2 {
+    display: none;
+  }
+  .frame-3 {
+    display: none;
+  }
+  .frame-4 {
+    display: none;
+  }
+}
